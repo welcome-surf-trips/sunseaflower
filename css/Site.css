@@ -42,15 +42,15 @@
   background-color:rgba(255, 255, 255, 0.35);
   
   font-family: "bebas_neuebold";
-  font-size: 15pt;
-  letter-spacing: 10px;
-  height: 60px;
+  font-size: 13pt;
+  letter-spacing: 7px;
+  /*height: 60px;*/
 }
 
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 0px 0px;
+  padding: 0px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -116,7 +116,6 @@
 
 
 .nav {
-    padding-left: 80px;
     margin-bottom: 0;
     list-style: none;
 }
@@ -126,8 +125,5 @@
     padding-top: 24px;
 }
 
-.navbar-default .navbar-nav li {
-    margin: 0px 10px 0px 10px;
-}
 
 .navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{color:#777;background-color:transparent}
