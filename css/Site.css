@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../fonts/bebasneue_bold/bebasneue_bold-webfont.eot');
+    src: url('../fonts/bebasneue_bold/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_bold/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_bold/bebasneue_bold-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_bold/bebasneue_bold-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_bold/bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('../fonts/bebasneue_regular/bebasneue_regular-webfont.eot');
+    src: url('../fonts/bebasneue_regular/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_regular/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_regular/bebasneue_regular-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_regular/bebasneue_regular-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_regular/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'farrayregular';
+    src: url('../fonts/farray-webfont/farray-webfont.eot');
+    src: url('../fonts/farray-webfont/farray-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/farray-webfont/farray-webfont.woff2') format('woff2'),
+         url('../fonts/farray-webfont/farray-webfont.woff') format('woff'),
+         url('../fonts/farray-webfont/farray-webfont.ttf') format('truetype'),
+         url('../fonts/farray-webfont/farray-webfont.svg#farrayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.navbar-default {
+  background-color:rgba(255, 255, 255, 0.35);
+  
+  font-family: "bebas_neuebold";
+  font-size: 15pt;
+  letter-spacing: 10px;
+  height: 60px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 0px 0px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+.galeria-section {
+    width: 100%;
+    padding: 208px 0;
+    color: #fff;
+    background-color: #00e8b2;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.email-section {
+    width: 100%;
+    padding: 208px 0;
+    color: #fff;
+    background: url(../img/email.png) no-repeat center center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.premiers-section {
+    width: 100%;
+    padding: 393px 0;
+    color: #fff;
+    background: url(../img/premiers.png) no-repeat center center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.trailler-section {
+    width: 100%;
+    padding: 614px 0;
+    color: #fff;
+    background: url(../img/trailler.png) no-repeat center center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.content-section {
+    padding-top: 0px;
+}
+
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 0px;
+    }
+}
+
+
+.nav {
+    padding-left: 80px;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:#000000;
+    padding-top: 24px;
+}
+
+.navbar-default .navbar-nav li {
+    margin: 0px 10px 0px 10px;
+}
+
+.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{color:#777;background-color:transparent}

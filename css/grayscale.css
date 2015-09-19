@@ -61,12 +61,13 @@ a:focus {
     font-weight: 400;
 }
 
-.navbar-custom {
+.navbar-custom .top-nav-collapse {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "bebas_neuebold",Helvetica,Arial,sans-serif;
     background-color: #000;
+    
 }
 
 .navbar-custom .navbar-brand {
@@ -147,7 +148,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg.png) no-repeat top center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -284,10 +285,27 @@ a:focus {
         padding-top: 250px;
     }
 
+
+    .galeria-section {
+        padding: 100px 0;
+    }
+    
     .download-section {
         padding: 100px 0;
     }
+    
+    .email-section {
+        padding: 100px 0;
+    }
+    
+     .premiers-section {
+        padding: 100px 0;
+    }
 
+     .trailler-section {
+        padding: 100px 0;
+    }
+    
     #map {
         height: 400px;
         margin-top: 250px;
