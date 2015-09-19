@@ -127,3 +127,10 @@
 
 
 .navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{color:#777;background-color:transparent}
+
+
+.texto-diretores {
+  font-family: "bebas_neue_regularregular";
+  font-size: 28pt;
+  letter-spacing: 9px;
+}
