@@ -58,7 +58,7 @@
 
 .galeria-section {
     width: 100%;
-    padding: 208px 0;
+    height: 208px;
     color: #fff;
     background-color: #00e8b2;
     -webkit-background-size: cover;
@@ -93,8 +93,8 @@
 
 .trailler-section {
     width: 100%;
-    padding: 614px 0;
     color: #fff;
+    height: 932px;
     background: url(../img/trailler.png) no-repeat center center scroll;
     background-color: #fff;
     -webkit-background-size: cover;
@@ -102,11 +102,6 @@
     background-size: cover;
     -o-background-size: cover;
 }
-
-.content-section {
-    padding-top: 0px;
-}
-
 
 @media(min-width:767px) {
     .content-section {
@@ -133,4 +128,35 @@
   font-family: "bebas_neue_regularregular";
   font-size: 28pt;
   letter-spacing: 9px;
+}
+
+   .video-vimeo{
+
+        
+        margin-left: 195px;
+        margin-top: 25px;
+        text-align:center;
+    }
+    
+@media(max-width:767px) {
+   .video-vimeo{
+        margin-left: 70px;
+        margin-top: 0px;
+        text-align:center;
+    }
+}
+
+.starring{
+    font-family: "farrayregular";
+  font-size: 22pt;
+  letter-spacing: 9px;
+  color: #49287f;
+}
+
+.galeria {
+  font-family: "bebas_neue_regularregular";
+  font-size: 28pt;
+  color: black;
+  letter-spacing: 9px;
+  padding-top: 30px;
 }

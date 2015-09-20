@@ -36,18 +36,32 @@ h2 {
 }
 
 h3 {
-    font-family: "bebas_neue_regularregular";
-	font-size: 1.5rem;
+    font-family: "bebas_neuebold";
+	font-size: 22px;
+    color: #49287f;
+    letter-spacing: 9px;
 }
 
 h4 {
-    font-family: "bebas_neue_regularregular";
-	font-size: 1.25rem;
+    font-family: "bebas_neuebold";
+    font-size: 27px;
+    color: #49287f;
+    letter-spacing: 9px;
 }
 
+strong {
+    font-family: "bebas_neuebold";
+    font-size: 27px;
+    color: #00e7b0;
+    letter-spacing: 9px;
+}
+
+
 h5 {
-	font-size: 18px;
-	line-height: 28px;
+    font-family: "bebas_neuebold";
+    font-size: 17px;
+    color: #49287f;
+    letter-spacing: 9px;
 }
 
 h6 {
@@ -315,9 +329,8 @@ a:focus {
         padding-top: 250px;
     }
 
-
     .galeria-section {
-        padding: 100px 0;
+        height: 200px;
     }
     
     .download-section {
@@ -332,10 +345,6 @@ a:focus {
         padding: 100px 0;
     }
 
-     .trailler-section {
-        padding: 100px 0;
-    }
-    
     #map {
         height: 400px;
         margin-top: 250px;
