@@ -18,59 +18,6 @@ html {
 }
 
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: "bebas_neue_regularregular";
-    letter-spacing: 12px;
-        margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-h1 {
-	font-size: 40px;
-    letter-spacing: 12px;
-}
-
-h2 {
-    font-family: "bebas_neue_regularregular";
-	font-size: 45px;
-}
-
-h3 {
-    font-family: "bebas_neuebold";
-	font-size: 22px;
-    color: #49287f;
-    letter-spacing: 9px;
-}
-
-h4 {
-    font-family: "bebas_neuebold";
-    font-size: 27px;
-    color: #49287f;
-    letter-spacing: 9px;
-}
-
-strong {
-    font-family: "bebas_neuebold";
-    font-size: 27px;
-    color: #00e7b0;
-    letter-spacing: 9px;
-}
-
-
-h5 {
-    font-family: "bebas_neuebold";
-    font-size: 17px;
-    color: #49287f;
-    letter-spacing: 9px;
-}
-
-h6 {
-	font-size: 18px;
-    font-family: "bebas_neue_regularregular";
-    letter-spacing: 8px;
-    padding-right: 8px;
-
-}
 
 
 
@@ -185,48 +132,7 @@ a:focus {
     }
 }
 
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/intro-bg.png) no-repeat top center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
-
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 26px;
-    }
-}
 
 .btn-circle {
     width: 70px;
