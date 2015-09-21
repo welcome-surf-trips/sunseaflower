@@ -103,6 +103,16 @@
     -o-background-size: cover;
 }
 
+.rodape {
+    width: 100%;
+    
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 @media(min-width:767px) {
     .content-section {
         padding-top: 0px;
@@ -131,11 +141,10 @@
 }
 
    .video-vimeo{
+    padding-right: 90px;
+    padding-left: 90px;
+        padding-top: 130px;
 
-        
-        margin-left: 195px;
-        margin-top: 25px;
-        text-align:center;
     }
     
 
@@ -195,6 +204,9 @@
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
+    .trailler-section{
+        height: 1228px;
+    }
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -253,9 +265,9 @@ h6 {
 
 @media(max-width:767px) {
    .video-vimeo{
-        margin-left: 70px;
-        margin-top: 0px;
-        text-align:center;
+    padding-right: 40px;
+    padding-left: 40px;
+    
     }
 }
 
