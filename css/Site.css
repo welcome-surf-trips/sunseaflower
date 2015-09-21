@@ -69,7 +69,7 @@
 
 .email-section {
     width: 100%;
-    padding: 208px 0;
+    height: 450px;
     color: #fff;
     background: url(../img/email.png) no-repeat center center scroll;
     background-color: #fff;
@@ -138,13 +138,7 @@
         text-align:center;
     }
     
-@media(max-width:767px) {
-   .video-vimeo{
-        margin-left: 70px;
-        margin-top: 0px;
-        text-align:center;
-    }
-}
+
 
 .starring{
     font-family: "farrayregular";
@@ -255,4 +249,67 @@ h6 {
     letter-spacing: 8px;
     padding-right: 8px;
 
+}
+
+@media(max-width:767px) {
+   .video-vimeo{
+        margin-left: 70px;
+        margin-top: 0px;
+        text-align:center;
+    }
+}
+
+.input-group{
+      margin: 0 auto;
+    padding-top: 50px;
+    width: 100%;
+
+}
+
+.input-group .form-control, .input-group-addon, .input-group-btn{
+    height: 107px;
+    
+    background-color:#00e7b0;
+    border: 0px;
+        font-size: 22px;
+    font-family: "bebas_neue_regularregular";
+    letter-spacing: 9px;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+    height: 107px;
+    width: 175px;
+    background-color: #49287f;
+}
+
+.btn-default{
+    color: white;
+    text-transform: uppercase;
+    border: 0px solid #49287f;
+    font-size: 22px;
+    font-family: "bebas_neue_regularregular";
+    letter-spacing: 9px;
+}
+
+.form-control{
+         border-radius: 0px; 
+}
+
+.btn{
+         border-radius: 0px; 
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #49287f;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #49287f;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #49287f;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #49287f;
 }
