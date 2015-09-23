@@ -218,24 +218,24 @@
         <div class="premiers-section">
             <div class="container">
                 <div class="col-md-12">
-                    <br>
+                    
                     <div class="linha"></div>
-                    <button class="button-custom esq" type="button">Joinville</button>
-                    <button class="button-custom esq" type="button">Baneário Camboriu</button>
-                    <button class="button-custom esq" type="button">Florianópolis</button>
-                    <button class="button-custom esq dir" type="button">Floripa</button>
+                    <button class="button-custom esq" value="joinville" type="button">Joinville</button>
+                    <button class="button-custom esq" value="camboriu" type="button">Baneário Camboriu</button>
+                    <button class="button-custom esq" value="florianopolis" type="button">Florianópolis</button>
+                    <button class="button-custom esq dir" value="floripa" type="button">Floripa</button>
                     <div class="linha"></div>
-                    <button class="button-custom esq" type="button">Curitiba</button>
-                    <button class="button-custom esq" type="button">Porto Alegre</button>
-                    <button class="button-custom esq" type="button">Rio de Janeiro</button>
-                    <button class="button-custom esq dir" type="button">São Paulo</button>
+                    <button class="button-custom esq" value="curitiba" type="button">Curitiba</button>
+                    <button class="button-custom esq" value="portoalegre" type="button">Porto Alegre</button>
+                    <button class="button-custom esq" value="rio" type="button">Rio de Janeiro</button>
+                    <button class="button-custom esq dir" value="saopaulo" type="button">São Paulo</button>
                     
                     <table class="table-pre">
                         <tr>
-                            <td class="titulo">XX-XX-XXX | 19 hs</td>
+                            <td class="titulo"><label class="label-titulo" /></td>
                         </tr>
                         <tr>
-                            <td class="subtitulo">Espaço Surf - Curitiba- PR </td>
+                            <td class="subtitulo"><label class="label-sub-titulo"/></td>
                         </tr>
                     </table>
                 </div>
@@ -272,6 +272,41 @@
     <script src="js/grayscale.js"></script>
     <script type="text/javascript">
 		$(document).ready(function() {
+            
+            $(".button-custom").click(function(){
+                //$($(this))[0].className = 'ativo';
+                $($(this)).removeAttr('ativo');
+
+                switch($(this).val()){
+
+                    case "joinville": $(".label-titulo").text("XX-XX-XXX | 10 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Joinville- SC");
+                    break;
+                    case "camboriu": $(".label-titulo").text("XX-XX-XXX | 11 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Balneário Camboriu - SC");
+                    break;
+                    case "florianopolis": $(".label-titulo").text("XX-XX-XXX | 12 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Florianópolis - SC");
+                    break;
+                    case "floripa": $(".label-titulo").text("XX-XX-XXX | 13 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Flripa - SC");
+                    break;
+                    case "curitiba": $(".label-titulo").text("XX-XX-XXX | 14 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Curitiba - PR");
+                    break;
+                    case "portoalegre": $(".label-titulo").text("XX-XX-XXX | 15 hs");
+                                      $(".label-sub-titulo").text("Espaço Porto Alegre Surf - Porto Alegre - RS");
+                    break;
+                    case "rio": $(".label-titulo").text("XX-XX-XXX | 16 hs");
+                                      $(".label-sub-titulo").text("Espaço RioSurf - Rio de Janeiro - RJ");
+                    break;
+                    case "saopaulo": $(".label-titulo").text("XX-XX-XXX | 19 hs");
+                                      $(".label-sub-titulo").text("Espaço SPSurf - São Paulo - SP");
+                    break;
+                }
+            }); 
+
+
             $('.myform').submit(function(e) {
               var $this = $(this);
               $.ajax({
