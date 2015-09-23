@@ -33,20 +33,18 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-
-
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MC9JQR"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MC9JQR');</script>
+
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MC9JQR"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager -->
 
     <!-- Navigation -->
@@ -61,11 +59,8 @@
                 </a>
 
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-center navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -164,10 +159,10 @@
                     <div class="col-xs-12 text-center">
                         <br><br>
                         <span class="galeria">Galeria</span>
-                        <a rel="example_group" href="img/f.png"><img src="img/galeria.png"></a>
+                        <a rel="example_group" href="img/f.png"><img src="img/galeria.png" class="img-responsive"></a>
 
                         <a rel="example_group" href="img/f.png"></a>
-                            <a rel="example_group" href="img/f.png"><</a>
+                            <a rel="example_group" href="img/f.png"></a>
                             <a rel="example_group" href="img/f.png"></a>
                             <a rel="example_group" href="img/f.png"></a>
 
@@ -184,51 +179,45 @@
         </div>
     </section>
 
-        <!-- Email Section -->
+    <!-- Email Section -->
     <section id="email" class="text-center">
         <div class="email-section">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <h1 style="padding-top: 150px;">Assista o filme completo</h1>
-                        <div class="input-group">
-                          <input type="email" class="form-control input-custom" placeholder="E-MAIL:">
-                          <span class="input-group-btn">
-                            <button class="btn btn-default" type="submit">Enviar</button>
-                          </span>
-
-
-                        </div>
-
-
-
+                        <form class="myform" action="http://welcomesurftrips.us8.list-manage.com/subscribe/post" method="POST">
+                            <div class="input-group">
+                              <input type="hidden" name="u" value="4b3eb08571c0a6747815ffb1c">
+                              <input type="hidden" name="id" value="c012a84ddd">
+                              <input type="email" value="" name="EMAIL" class="form-control input-custom" placeholder="E-MAIL:" required>
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit" value="Send" name="submit" id="mc-embedded-subscribe">Enviar</button>
+                              </span>
+                            </div>
+                        </form>
+                     </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!--MODAL-->
-    <div class="modal fade bs-example-modal-sm" id="compre-basic-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade bs-example-modal-sm" id="modal-email" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <div class="vertical-registration-form">
-                    <h4 class="dark-text form-heading">Resumo do Pedido</h4>
+                    <img src="img/popup.png" class="img-responsive" data-dismiss="modal">
 
                 </div>
             </div>
         </div>
     </div>
-
-
     <!-- Premiers Section -->
-    <section id="premiers" class="content-section text-center">
+    <section id="premiers" class="text-center">
         <div class="premiers-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!--<h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>-->
                 </div>
             </div>
         </div>
@@ -249,27 +238,40 @@
             </div>
     </footer>
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-
 	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-
-
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-
     <script type="text/javascript">
 		$(document).ready(function() {
+            $('.myform').submit(function(e) {
+              var $this = $(this);
+              $.ajax({
+                  type: "GET", // GET & url for json slightly different
+                  url: "http://welcomesurftrips.us8.list-manage.com/subscribe/post-json?c=?",
+                  data: $this.serialize(),
+                  dataType    : 'json',
+                  contentType: "application/json; charset=utf-8",
+                  error       : function(err) { alert("Could not connect to the registration server."); },
+                  success     : function(data) {
+                      if (data.result != "success") {
+                          alert('Erro ao cadastrar seu e-mail, por favor tente em alguns minutos.');
+                      } else {
+                          alert("Precisamos confirmar o seu endereço de e-mail. Para concluir o processo de assinatura, clique no link existente no e-mail que acabamos de enviar para você.");
+                          $('#modal-email').modal('show');
+                      }
+                  }
+              });
+              return false;
+            });
+
 
 			$("a[rel=example_group]").fancybox({
 				'transitionIn'		: 'none',
@@ -279,8 +281,5 @@
 
     });
     </script>
-
-
 </body>
-
 </html>
