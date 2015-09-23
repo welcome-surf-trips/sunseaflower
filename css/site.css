@@ -81,7 +81,7 @@
 
 .premiers-section {
     width: 100%;
-    padding: 393px 0;
+    height: 960px;
     color: #fff;
     background: url(../img/premiers.png) no-repeat center center scroll;
     background-color: #fff;
@@ -344,4 +344,86 @@ width: 175px !important;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #49287f;
+}
+
+
+.button-custom{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    font-family: "bebas_neuebold";
+    letter-spacing: 3px;
+    width: 100%;
+    height: 50px;
+    
+}
+.dir{
+    border-right: 0px solid #000;
+}
+
+.esq{
+    border-left: 0px solid #000;
+}
+
+
+
+.linha {
+    border-top: 1px solid #000!important;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    margin: 0px auto;
+    width: 616px;
+}
+
+.table-pre{
+    border: 1px solid black;
+    border-collapse:collapse;
+    border-spacing:0;
+    margin: 4px auto;
+    width: 100%;
+    text-align: center;
+        font-family: "bebas_neuebold";
+    color: black;
+    letter-spacing: 3px;
+    border: 1px solid black;
+}
+
+.table-pre .titulo{
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 10px 0px 10px 0px;
+}
+
+.table-pre .subtitulo{
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+@media(min-width:768px) {
+    .button-custom{
+        width: 151px;
+    }
+    
+    .dir{
+        border-right: 1px solid #000;
+    }
+    
+    .esq{
+        border-left: 1px solid #000;
+    }
+
+    .table-pre{
+        border: 1px solid black;
+        border-collapse:collapse;
+        border-spacing:0;
+        margin: 4px auto;
+        width: 616px;
+        text-align: center;
+            font-family: "bebas_neuebold";
+        color: black;
+        letter-spacing: 3px;
+        border: 1px solid black;
+    }
 }
