@@ -186,10 +186,10 @@
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <h1 style="padding-top: 150px;">Assista o filme completo</h1>
-                        <form class="myform" action="http:////alberth.us11.list-manage.com/subscribe/post" method="POST">
+                        <form class="myform" action="http://welcomesurftrips.us8.list-manage.com/subscribe/post" method="POST">
                             <div class="input-group">
-                              <input type="hidden" name="u" value="42d2f988a64cf4cfaee8415a8">
-                              <input type="hidden" name="id" value="4c80284a32">
+                              <input type="hidden" name="u" value="4b3eb08571c0a6747815ffb1c">
+                              <input type="hidden" name="id" value="c012a84ddd">
                               <input type="email" value="" name="EMAIL" class="form-control input-custom" placeholder="E-MAIL:" required>
                               <span class="input-group-btn">
                                 <button class="btn btn-default" type="submit" value="Send" name="submit" id="mc-embedded-subscribe">Enviar</button>
@@ -255,7 +255,7 @@
               var $this = $(this);
               $.ajax({
                   type: "GET", // GET & url for json slightly different
-                  url: "http:////alberth.us11.list-manage.com/subscribe/post-json?c=?",
+                  url: "http://welcomesurftrips.us8.list-manage.com/subscribe/post-json?c=?",
                   data: $this.serialize(),
                   dataType    : 'json',
                   contentType: "application/json; charset=utf-8",
@@ -264,6 +264,7 @@
                       if (data.result != "success") {
                           alert('Erro ao cadastrar seu e-mail, por favor tente em alguns minutos.');
                       } else {
+                          alert("Precisamos confirmar o seu endereço de e-mail. Para concluir o processo de assinatura, clique no link existente no e-mail que acabamos de enviar para você.");
                           $('#modal-email').modal('show');
                       }
                   }
