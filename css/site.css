@@ -80,8 +80,9 @@
 }
 
 .premiers-section {
+    padding-top: 30px;
     width: 100%;
-    padding: 393px 0;
+    height: 960px;
     color: #fff;
     background: url(../img/premiers.png) no-repeat center center scroll;
     background-color: #fff;
@@ -117,6 +118,10 @@
 @media(min-width:767px) {
     .content-section {
         padding-top: 0px;
+    }
+    
+    .premiers-section {
+        padding-top: 80px;
     }
 }
 
@@ -298,10 +303,9 @@ width: 175px !important;
 
 .input-group .form-control, .input-group-addon, .input-group-btn{
     height: 107px;
-    
     background-color:#00e7b0;
     border: 0px;
-        font-size: 22px;
+    font-size: 22px;
     font-family: "bebas_neue_regularregular";
     letter-spacing: 9px;
 }
@@ -344,4 +348,105 @@ width: 175px !important;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #49287f;
+}
+
+
+.button-custom{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    font-family: "bebas_neuebold";
+    letter-spacing: 3px;
+    width: 100%;
+    height: 30px;
+}
+
+.dir{
+    border-right: 0px solid #000;
+}
+
+.esq{
+    border-left: 0px solid #000;
+}
+
+
+
+.linha {
+    border-top: 1px solid #000!important;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    margin: 0px auto;
+    width: 0px;
+}
+
+.table-pre{
+    border: 1px solid black;
+    border-collapse:collapse;
+    border-spacing:0;
+    margin: 4px auto;
+    width: 100%;
+    text-align: center;
+        font-family: "bebas_neuebold";
+    color: black;
+    letter-spacing: 3px;
+    border: 1px solid black;
+}
+
+.table-pre .titulo{
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 10px 0px 10px 0px;
+}
+
+.table-pre .subtitulo{
+    border: 1px solid black;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+    .button-custom:hover,.button-custom:active,.button-custom:focus{
+        background-color: #00e7b0 !important;
+    }
+    .ativo{
+        background:#00e7b0 !important;
+    }
+  
+
+@media(min-width:768px) {
+    .button-custom{
+        width: 151px;
+        height: 50px;
+    }
+    
+    .dir{
+        border-right: 1px solid #000;
+    }
+    
+    .esq{
+        border-left: 1px solid #000;
+    }
+
+    .table-pre{
+        border: 1px solid black;
+        border-collapse:collapse;
+        border-spacing:0;
+        margin: 4px auto;
+        width: 616px;
+        text-align: center;
+        font-family: "bebas_neuebold";
+        color: black;
+        letter-spacing: 3px;
+        border: 1px solid black;
+    }
+    
+    .linha {
+        border-top: 1px solid #000!important;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        margin: 0px auto;
+        width: 616px;
+    }
+
 }

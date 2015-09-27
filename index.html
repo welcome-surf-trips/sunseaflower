@@ -5,10 +5,10 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="keywords" content="surf, sea sun flower, costa rica, welcome surf trip, essential">"
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">     
+      
     <title>Sea Sun Flower</title>
     <link rel="icon" href="img/favicon.ico">
     <!-- Bootstrap Core CSS -->
@@ -159,13 +159,23 @@
                     <div class="col-xs-12 text-center">
                         <br><br>
                         <span class="galeria">Galeria</span>
-                        <a rel="example_group" href="img/f.png"><img src="img/galeria.png" class="img-responsive"></a>
-
-                        <a rel="example_group" href="img/f.png"></a>
-                            <a rel="example_group" href="img/f.png"></a>
-                            <a rel="example_group" href="img/f.png"></a>
-                            <a rel="example_group" href="img/f.png"></a>
-
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (1).jpg"><img src="img/galeria.png" class="img-responsive"></a>
+							<a rel="example_group" href="img/galeria/SeaSunFlower (2).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (3).jpg"></a>
+							<a rel="example_group" href="img/galeria/SeaSunFlower (4).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (5).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (6).jpg"></a>
+							<a rel="example_group" href="img/galeria/SeaSunFlower (7).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (8).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (9).jpg"></a>
+							<a rel="example_group" href="img/galeria/SeaSunFlower (10).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (11).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (12).jpg"></a>
+							<a rel="example_group" href="img/galeria/SeaSunFlower (13).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (14).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (15).jpg"></a>
+							<a rel="example_group" href="img/galeria/SeaSunFlower (16).jpg"></a>
+                            <a rel="example_group" href="img/galeria/SeaSunFlower (17).jpg"></a>
                     </div>
                     <div class="col-xs-12 text-center">
                     		<!--<a rel="example_group" href="img/f.png"><img alt="" src="img/f.png" width="220" height="450"></a>
@@ -217,8 +227,29 @@
     <section id="premiers" class="text-center">
         <div class="premiers-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-md-12">
+                    
+                    <div class="linha"></div>
+                    <button class="button-custom esq" value="joinville" type="button">Joinville</button>
+                    <button class="button-custom esq" value="camboriu" type="button">Baneário Camboriu</button>
+                    <button class="button-custom esq" value="florianopolis" type="button">Florianópolis</button>
+                    <button class="button-custom esq dir" value="floripa" type="button">Floripa</button>
+                    <div class="linha"></div>
+                    <button class="button-custom esq" value="curitiba" type="button">Curitiba</button>
+                    <button class="button-custom esq" value="portoalegre" type="button">Porto Alegre</button>
+                    <button class="button-custom esq" value="rio" type="button">Rio de Janeiro</button>
+                    <button class="button-custom esq dir" value="saopaulo" type="button">São Paulo</button>
+                    
+                    <table class="table-pre">
+                        <tr>
+                            <td class="titulo"><label class="label-titulo" /></td>
+                        </tr>
+                        <tr>
+                            <td class="subtitulo"><label class="label-sub-titulo"/></td>
+                        </tr>
+                    </table>
                 </div>
+               
             </div>
         </div>
     </section>
@@ -237,20 +268,56 @@
                 </div>
             </div>
     </footer>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <!--<script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>-->
 	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
     <script type="text/javascript">
 		$(document).ready(function() {
+            
+            $(".button-custom").click(function(){
+                //$($(this))[0].className = 'ativo';
+                $($(this)).removeAttr('ativo');
+
+                switch($(this).val()){
+
+                    case "joinville": $(".label-titulo").text("XX-XX-XXX | 10 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Joinville- SC");
+                    break;
+                    case "camboriu": $(".label-titulo").text("XX-XX-XXX | 11 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Balneário Camboriu - SC");
+                    break;
+                    case "florianopolis": $(".label-titulo").text("XX-XX-XXX | 12 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Florianópolis - SC");
+                    break;
+                    case "floripa": $(".label-titulo").text("XX-XX-XXX | 13 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Flripa - SC");
+                    break;
+                    case "curitiba": $(".label-titulo").text("XX-XX-XXX | 14 hs");
+                                      $(".label-sub-titulo").text("Espaço Surf - Curitiba - PR");
+                    break;
+                    case "portoalegre": $(".label-titulo").text("XX-XX-XXX | 15 hs");
+                                      $(".label-sub-titulo").text("Espaço Porto Alegre Surf - Porto Alegre - RS");
+                    break;
+                    case "rio": $(".label-titulo").text("XX-XX-XXX | 16 hs");
+                                      $(".label-sub-titulo").text("Espaço RioSurf - Rio de Janeiro - RJ");
+                    break;
+                    case "saopaulo": $(".label-titulo").text("XX-XX-XXX | 19 hs");
+                                      $(".label-sub-titulo").text("Espaço SPSurf - São Paulo - SP");
+                    break;
+                }
+            }); 
+
+
             $('.myform').submit(function(e) {
               var $this = $(this);
               $.ajax({
@@ -274,11 +341,10 @@
 
 
 			$("a[rel=example_group]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over'
-		});
-
+                'nextEffect': 'none',
+                'prevEffect': 'none'
+            });
+    
     });
     </script>
 </body>
