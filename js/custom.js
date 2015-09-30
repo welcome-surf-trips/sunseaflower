@@ -30,13 +30,16 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function() {
-            
+            $("#joinville").addClass("ativo");
+            $(".label-titulo").text("09-OUT-2015");
+            $(".label-sub-titulo").text("LOCAL A SER DEFINIDO");
+                
             $("a[rel=example_group]").fancybox();
             
             $(".button-custom").click(function(){
-                //$($(this))[0].className = 'ativo';
                 $($(this)).removeAttr('ativo');
-
+                $("#joinville").removeClass("ativo");
+                
                 switch($(this).val()){
 
                     case "joinville": $(".label-titulo").text("09-OUT-2015");
@@ -80,7 +83,6 @@ $(document).ready(function() {
                       if (data.result != "success") {
                           alert('Erro ao cadastrar seu e-mail, por favor tente em alguns minutos.');
                       } else {
-                          alert("Precisamos confirmar o seu endereço de e-mail. Para concluir o processo de assinatura, clique no link existente no e-mail que acabamos de enviar para você.");
                           $('#modal-email').modal('show');
                       }
                   }
@@ -89,6 +91,13 @@ $(document).ready(function() {
             });
 
 
-			
+			$('#email').keypress(function (e) {
+              if (e.which == 13) {
+                  if($('#email')[0].checkValidity()){
+                    $('.myform').submit();
+                    return false;   
+                  }
+              }
+            });
     
     });
