@@ -78,10 +78,10 @@ $(document).ready(function() {
                   data: $this.serialize(),
                   dataType    : 'json',
                   contentType: "application/json; charset=utf-8",
-                  error       : function(err) { alert("Could not connect to the registration server."); },
+                  error       : function(err) { alert("Erro ao cadastrar seu e-mail, por favor tente em alguns minutos."); },
                   success     : function(data) {
                       if (data.result != "success") {
-                          alert('Erro ao cadastrar seu e-mail, por favor tente em alguns minutos.');
+                          alert('Email já cadastrado.');
                       } else {
                           $('#modal-email').modal('show');
                       }
