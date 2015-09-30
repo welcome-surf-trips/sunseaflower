@@ -40,7 +40,7 @@
 
 .navbar-default {
   background-color:rgba(255, 255, 255, 0.35);
-  
+
   font-family: "bebas_neuebold";
   font-size: 13pt;
   letter-spacing: 7px;
@@ -118,7 +118,7 @@
     .content-section {
         padding-top: 0px;
     }
-    
+
     .premiers-section {
         padding-top: 80px;
     }
@@ -150,7 +150,7 @@
     padding-left: 90px;
     padding-top: 60px;
 }
-    
+
 
 
 .starring{
@@ -174,7 +174,7 @@
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.png) no-repeat top right scroll;
+    background: url(../img/intro-bg.jpg) no-repeat top right scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -281,17 +281,17 @@ h6 {
    .video-vimeo{
     padding-right: 40px;
     padding-left: 40px;
-    
+
     }
-    
+
  }
- 
+
 @media(min-width:768px) {
 .input-group{
     width: 70% !important;
-        
+
     }
-    
+
     .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
 width: 175px !important;
 }
@@ -333,11 +333,11 @@ width: 175px !important;
 }
 
 .form-control{
-         border-radius: 0px; 
+         border-radius: 0px;
 }
 
 .btn{
-         border-radius: 0px; 
+         border-radius: 0px;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -417,18 +417,18 @@ width: 175px !important;
     .ativo{
         background:#00e7b0 !important;
     }
-  
+
 
 @media(min-width:768px) {
     .button-custom{
         width: 151px;
         height: 50px;
     }
-    
+
     .dir{
         border-right: 1px solid #000;
     }
-    
+
     .esq{
         border-left: 1px solid #000;
     }
@@ -445,7 +445,7 @@ width: 175px !important;
         letter-spacing: 3px;
         border: 1px solid black;
     }
-    
+
     .linha {
         border-top: 1px solid #000!important;
         padding-top: 2px;
