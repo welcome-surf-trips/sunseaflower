@@ -449,3 +449,13 @@ width: 175px !important;
     }
 
 }
+
+.galeriaImg a{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.galeriaImg img{
+    width: 100%;
+    height: 100%;
+}
