@@ -41,15 +41,14 @@ $(document).ready(function() {
                 $("#joinville").removeClass("ativo");
                 
                 switch($(this).val()){
-
                     case "joinville": $(".label-titulo").text("09-OUT-2015");
-                                      $(".label-sub-titulo").text("LOCAL A SER DEFINIDO");
+                                      $(".label-sub-titulo").text("Bovary Snooker Pub");
                     break;
-                    case "camboriu": $(".label-titulo").text("10-out-2015");
-                                      $(".label-sub-titulo").text("LOCAL A SER DEFINIDO");
+                    case "camboriu": $(".label-titulo").text("16-out-2015");
+                                      $(".label-sub-titulo").text("TJ's");
                     break;
-                    case "florianopolis": $(".label-titulo").text("23-out-2015");
-                                      $(".label-sub-titulo").text("FOOD TRUK PARK, LAGOA DA CONCEIÇÃO");
+                    case "florianopolis": $(".label-titulo").text("22-out-2015");
+                                      $(".label-sub-titulo").text("Food Truck da LAGOA DA CONCEIÇÃO");
                     break;
                     case "floripa": $(".label-titulo").text("25-out-2015");
                                       $(".label-sub-titulo").text("POUSADA VILA GAIA, NORTE SHORE");
@@ -57,14 +56,14 @@ $(document).ready(function() {
                     case "curitiba": $(".label-titulo").text("15-out-2015");
                                       $(".label-sub-titulo").text("Espaço Surf Curitiba");
                     break;
-                    case "portoalegre": $(".label-titulo").text("13 e 14-nov-2015");
-                                      $(".label-sub-titulo").text("MIMPI");
+                    case "portoalegre": $(".label-titulo").text("14-nov-2015");
+                                      $(".label-sub-titulo").text("MIMPI Film Fest");
                     break;
-                    case "rio": $(".label-titulo").text("19 a 22-nov-2015");
-                                      $(".label-sub-titulo").text("MIMPI");
+                    case "rio": $(".label-titulo").text("20-nov-2015");
+                                      $(".label-sub-titulo").text("MIMPI Film Fest");
                     break;
                     case "saopaulo": $(".label-titulo").text("25-nov-2015");
-                                      $(".label-sub-titulo").text("LOCAL A SER DEFINIDO");
+                                      $(".label-sub-titulo").text("Bolovo");
                     break;
                 }
             }); 
