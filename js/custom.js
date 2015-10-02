@@ -32,7 +32,7 @@ $('.navbar-collapse ul li a').click(function() {
 $(document).ready(function() {
             $("#joinville").addClass("ativo");
             $(".label-titulo").text("09-OUT-2015");
-            $(".label-sub-titulo").text("LOCAL A SER DEFINIDO");
+            $(".label-sub-titulo").text("Bovary Snooker Pub");
                 
             $("a[rel=example_group]").fancybox();
             
