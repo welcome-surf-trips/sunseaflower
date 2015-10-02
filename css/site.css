@@ -487,3 +487,14 @@ width: 175px !important;
 .banner-rodape{
     padding-top: 470px;
 }
+
+
+.mailchimp-error
+ {
+         font-family: "bebas_neuebold";
+    font-size: 20px;
+    color: white;
+	display: none;
+	margin-top: 15px;
+    letter-spacing: 5px;
+}

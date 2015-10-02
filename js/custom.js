@@ -69,25 +69,41 @@ $(document).ready(function() {
             }); 
 
 
-            $('.myform').submit(function(e) {
-              var $this = $(this);
-              $.ajax({
-                  type: "GET", // GET & url for json slightly different
-                  url: "http://welcomesurftrips.us8.list-manage.com/subscribe/post-json?c=?",
-                  data: $this.serialize(),
-                  dataType    : 'json',
-                  contentType: "application/json; charset=utf-8",
-                  error       : function(err) { alert("Erro ao cadastrar seu e-mail, por favor tente em alguns minutos."); },
-                  success     : function(data) {
-                      if (data.result != "success") {
-                          alert('Email já cadastrado.');
-                      } else {
-                          $('#modal-email').modal('show');
-                      }
-                  }
-              });
-              return false;
-            });
+
+    $('.mailchimp').ajaxChimp({
+        callback: mailchimpCallback,
+        url: "http://welcomesurftrips.us8.list-manage.com/subscribe/post?u=4b3eb08571c0a6747815ffb1c&amp;id=c012a84ddd" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
+    });
+
+    function mailchimpCallback(resp) {
+        if (resp.result === 'success') {
+             $('#modal-email').modal('show');
+            $('.mailchimp-error').fadeOut(500);
+        } else if (resp.result === 'error') {
+           $('.mailchimp-error').fadeIn(1000);
+        }
+    }
+    
+    
+            // $('.myform').submit(function(e) {
+            //   var $this = $(this);
+            //   $.ajax({
+            //       type: "GET", // GET & url for json slightly different
+            //       url: "http://welcomesurftrips.us8.list-manage.com/subscribe/post-json?c=?",
+            //       data: $this.serialize(),
+            //       dataType    : 'json',
+            //       contentType: "application/json; charset=utf-8",
+            //       error       : function(err) { alert("Erro ao cadastrar seu e-mail, por favor tente em alguns minutos."); },
+            //       success     : function(data) {
+            //           if (data.result != "success") {
+            //               alert('Email já cadastrado.');
+            //           } else {
+            //               $('#modal-email').modal('show');
+            //           }
+            //       }
+            //   });
+            //   return false;
+            // });
 
 
 			$('#email').keypress(function (e) {
