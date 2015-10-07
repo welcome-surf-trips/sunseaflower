@@ -43,6 +43,7 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager -->
 
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -170,32 +171,24 @@
     <!-- Email Section -->
     <section id="email" class="text-center">
         <div class="email-section">
+            <div class="loading">
+                <img class="loader" src='img/blank.gif' width="200" height="200" />
+            </div>
             <div class="container">
-                <div class="row">
+                <div class="row ">
                     <div class="col-xs-12 text-center">
                         <h1 style="padding-top: 150px;">Assista o filme completo</h1>
 
                          <form class="myform mailchimp">
-                                <div class="input-group">
-                                    <input type="email" id="cf-email" name="email" class="form-control input-custom" placeholder="E-MAIL:">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="submit">Enviar</button>
-                                     </span>
-                                 </div>
-                            </form>
-                            <p class="mailchimp-error">E-mail inválido ou já existe em nossa base.</p>
-
-                        <!--<form class="myform" action="http://welcomesurftrips.us8.list-manage.com/subscribe/post" method="POST">
                             <div class="input-group">
-                              <input type="hidden" name="u" value="4b3eb08571c0a6747815ffb1c">
-                              <input type="hidden" name="id" value="c012a84ddd">
-                              <input type="email" value="" name="EMAIL" class="form-control input-custom" placeholder="E-MAIL:" required>
-                              <span class="input-group-btn">
-                                <button class="btn btn-default" type="submit" value="Send" name="submit" id="mc-embedded-subscribe">Enviar</button>
-                              </span>
-                            </div>
-                        </form>-->
-                     </div>
+                                <input type="email" id="cf-email" name="email" class="form-control input-custom" placeholder="E-MAIL:">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" id="btnEnviar" type="submit">Enviar</button>
+                                </span>
+                             </div>
+                          </form>
+                          <p class="mailchimp-error">E-mail inválido ou já existe em nossa base.</p>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -216,7 +209,7 @@
     <section id="premieres" class="text-center">
         <div class="premieres-section">
             <div class="container">
-                <div class="col-md-12">
+                <div class="col-md-12" style="padding-top: 40px">
 
                     <div class="linha"></div>
                     <button class="button-custom esq" id="joinville" value="joinville" type="button">Joinville</button>
@@ -247,7 +240,7 @@
     <!-- Footer -->
     <footer>
         <div class="rodape">
-            <div class="row" style="padding: 0px 50px 0px 0px;"><br/>
+            <div class="row" style="margin: 0px 0px 0px 0px;"><br/>
                 <div style="max-width: 100%;" class="page-wrap pull-right">
                     <a href="http://www.welcomesurftrips.com.br/" target="_blank"><img class="img-responsive" src="img/welcome.png" style="padding: 20px 10px 10px 10px"></a>
                     <a href="http://www.vansdobrasil.com/" target="_blank"><img class="img-responsive " src="img/vans.png" style="padding: 20px 10px 10px 10px"></a>
