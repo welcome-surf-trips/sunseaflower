@@ -33,13 +33,13 @@ $(document).ready(function() {
             $("#joinville").addClass("ativo");
             $(".label-titulo").text("09-OUT-2015");
             $(".label-sub-titulo").text("Bovary Snooker Pub");
-                
+
             $("a[rel=example_group]").fancybox();
-            
+
             $(".button-custom").click(function(){
                 $($(this)).removeAttr('ativo');
                 $("#joinville").removeClass("ativo");
-                
+
                 switch($(this).val()){
                     case "joinville": $(".label-titulo").text("09-OUT-2015");
                                       $(".label-sub-titulo").text("Bovary Snooker Pub");
@@ -48,10 +48,10 @@ $(document).ready(function() {
                                       $(".label-sub-titulo").text("TJ's");
                     break;
                     case "florianopolis": $(".label-titulo").text("22-out-2015");
-                                      $(".label-sub-titulo").text("Food Truck da LAGOA DA CONCEIÇÃO");
+                                      $(".label-sub-titulo").text("Food Truck da Lagoa da Conceição");
                     break;
                     case "floripa": $(".label-titulo").text("25-out-2015");
-                                      $(".label-sub-titulo").text("POUSADA VILA GAIA, NORTE SHORE");
+                                      $(".label-sub-titulo").text("Pousada Vila Gaia, North Shore");
                     break;
                     case "curitiba": $(".label-titulo").text("15-out-2015");
                                       $(".label-sub-titulo").text("Espaço Surf Curitiba");
@@ -66,7 +66,7 @@ $(document).ready(function() {
                                       $(".label-sub-titulo").text("Bolovo");
                     break;
                 }
-            }); 
+            });
 
 
 
@@ -83,8 +83,8 @@ $(document).ready(function() {
            $('.mailchimp-error').fadeIn(1000);
         }
     }
-    
-    
+
+
             // $('.myform').submit(function(e) {
             //   var $this = $(this);
             //   $.ajax({
@@ -110,9 +110,9 @@ $(document).ready(function() {
               if (e.which == 13) {
                   if($('#email')[0].checkValidity()){
                     $('.myform').submit();
-                    return false;   
+                    return false;
                   }
               }
             });
-    
+
     });
