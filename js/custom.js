@@ -33,13 +33,13 @@ $(document).ready(function() {
             $("#joinville").addClass("ativo");
             $(".label-titulo").text("09-OUT-2015");
             $(".label-sub-titulo").text("Bovary Snooker Pub");
-                
+
             $("a[rel=example_group]").fancybox();
-            
+
             $(".button-custom").click(function(){
                 $($(this)).removeAttr('ativo');
                 $("#joinville").removeClass("ativo");
-                
+
                 switch($(this).val()){
                     case "joinville": $(".label-titulo").text("09-OUT-2015");
                                       $(".label-sub-titulo").text("Bovary Snooker Pub");
@@ -48,10 +48,10 @@ $(document).ready(function() {
                                       $(".label-sub-titulo").text("TJ's");
                     break;
                     case "florianopolis": $(".label-titulo").text("22-out-2015");
-                                      $(".label-sub-titulo").text("Food Truck da LAGOA DA CONCEIÇÃO");
+                                      $(".label-sub-titulo").text("Food Truck da Lagoa da Conceição");
                     break;
                     case "floripa": $(".label-titulo").text("25-out-2015");
-                                      $(".label-sub-titulo").text("POUSADA VILA GAIA, NORTE SHORE");
+                                      $(".label-sub-titulo").text("Pousada Vila Gaia, North Shore");
                     break;
                     case "curitiba": $(".label-titulo").text("15-out-2015");
                                       $(".label-sub-titulo").text("Espaço Surf Curitiba");
@@ -66,20 +66,20 @@ $(document).ready(function() {
                                       $(".label-sub-titulo").text("Bolovo");
                     break;
                 }
-            }); 
+            });
 
- 
 
-            
-          
-    
+
+
+
+
         $('.loading').hide();
         $('.mailchimp').ajaxChimp({
             callback: mailchimpCallback,
             url: "http://welcomesurftrips.us8.list-manage.com/subscribe/post?u=4b3eb08571c0a6747815ffb1c&amp;id=c012a84ddd"
-            
+
         });
-   
+
     function mailchimpCallback(resp) {
         $('.loading').fadeIn("fast");;
         if (resp.result === 'success') {
@@ -87,7 +87,7 @@ $(document).ready(function() {
             $('.mailchimp-error').fadeOut(500);
         } else if (resp.result === 'error') {
            $('.mailchimp-error').fadeIn(1000);
-           
+
         }
         $('.loading').delay(1000).fadeOut("fast");
     }
