@@ -31,8 +31,8 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(document).ready(function() {
             $("#saopaulo").addClass("ativo");
-            $(".label-titulo").text("09-OUT-2015");
-            $(".label-sub-titulo").text("Bovary Snooker Pub");
+            $(".label-titulo").text("25-NOV-2015");
+            $(".label-sub-titulo").text("Bolovo");
 
             $("a[rel=example_group]").fancybox();
 
