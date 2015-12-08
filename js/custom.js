@@ -30,7 +30,7 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function() {
-            $("#saopaulo").addClass("ativo");
+            //$("#saopaulo").addClass("ativo");
             $(".label-titulo").text("25-NOV-2015");
             $(".label-sub-titulo").text("Bolovo");
 
